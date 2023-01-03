@@ -385,9 +385,9 @@ def get_args():
     parser.add_argument("--N", default=1, type=int,
                         help="Number of instances to be pasted")
 
-    parser.add_argument("--AugImg_path", default="", type=str,
+    parser.add_argument("--AugImg_path", default="./Augmented_data", type=str,
                         help="Directory for augmented images")  ## AugImg_path
-    parser.add_argument("--AugXml_path", default="", type=str,
+    parser.add_argument("--AugXml_path", default="./Augmented_data", type=str,
                         help="Directory for the annotation of augmented images")  ## path_for_instance_xml
 
     parser.add_argument("--TrainInfo_path", default="information/train.txt", type=str,
