@@ -374,20 +374,20 @@ def ValCopy(args):
 
 def get_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--InstanceImg_Path", default="E:/aug_cp/information/input_pic", type=str,
+    parser.add_argument("--InstanceImg_Path", default="information/input_pic", type=str,
                         help="Input instances directory")  ## InstanceImg_path
-    parser.add_argument("--InstanceXml_Path", default="E:/aug_cp/information/input_xml", type=str,
+    parser.add_argument("--InstanceXml_Path", default="information/input_xml", type=str,
                         help="Input instances annotation directory")  ## InstanceXml_path
 
-    parser.add_argument("--OriImg_path", default="E:/aug_cp/data/VOCdevkit/VOC2012", type=str,
+    parser.add_argument("--OriImg_path", default="data/VOCdevkit/VOC2012", type=str,
                         help="Input instances annotation directory")
 
     parser.add_argument("--N", default=1, type=int,
                         help="Number of instances to be pasted")
 
-    parser.add_argument("--AugImg_path", default="./Augmented_data", type=str,
+    parser.add_argument("--AugImg_path", default="", type=str,
                         help="Directory for augmented images")  ## AugImg_path
-    parser.add_argument("--AugXml_path", default="./Augmented_data", type=str,
+    parser.add_argument("--AugXml_path", default="", type=str,
                         help="Directory for the annotation of augmented images")  ## path_for_instance_xml
 
     parser.add_argument("--TrainInfo_path", default="information/train.txt", type=str,
